@@ -1,0 +1,201 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Nested category app",
+		"_postman_id": "2783de7b-9fef-1825-4677-d447326c4ba8",
+		"description": "Nested category app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/category/add",
+			"request": {
+				"url": "http://localhost:5000/category/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "categoryName",
+							"value": "Tablets",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "parentCategory",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "categoryUrl",
+							"value": "electronics/tablets",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Add category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/categories",
+			"request": {
+				"url": "http://localhost:5000/categories",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "View All categories"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/products",
+			"request": {
+				"url": "http://localhost:5000/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "List Products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/add",
+			"request": {
+				"url": "http://localhost:5000/product/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "Nokia 3.2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "12000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "productUrl",
+							"value": "Electronics/Mobiles/Nokia3.2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Add new product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category/update/1",
+			"request": {
+				"url": "http://localhost:5000/category/update/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "categoryName",
+							"value": "Electronics",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "parentCategory",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "categoryUrl",
+							"value": "Electronicsss",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/update/2",
+			"request": {
+				"url": "http://localhost:5000/product/update/2",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "Nokia 5.2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1500",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "productUrl",
+							"value": "Electronics/Mobiles/Nokia5.2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
